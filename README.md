@@ -180,6 +180,25 @@ reports sampled state — a fast flick could skip an element and leave it invisi
 - Nothing was taken from Google Images. Those are almost all copyrighted and would
   expose the business to a takedown or an invoice.
 
+### Supplier logos
+
+The homepage brand strip uses **real transparent logos** for the seven brands whose
+current mark exists under a free licence: Bosch, Valeo, Denso, ACDelco, Marelli, INA,
+LuK. They are greyscale at rest and colour on hover, sized by aspect-ratio bucket so
+wide wordmarks and square marks carry equal visual weight.
+
+The other fifteen stocked brands (ZEN, CARGO, BYPART, TYPER, MEA, WAI, GHIBAUDI, ORME,
+ZM, MOBILETRON, TRANSPO, UTM, IKA/GEBE, MEGA, SNR) are shown **as text**, not as logos.
+Wikimedia Commons has no correct file for them and its name-matches were different
+companies entirely — "LUK" returns Lukoil, "MEGA" returns Mega Man, "TRANSPO" returns
+Ottawa transit, "UTM" a university. Shipping those would have been worse than text.
+To add a real one, drop the file in `public/img/brands/`, add an entry to `brandLogos`
+in `content/images.ts` with its viewBox ratio, and remove the name from `otherBrands`.
+
+Note on trademarks: showing a supplier's mark to say "we stock this brand" is
+ordinary referential use and standard in the parts trade, but the marks belong to
+their owners. The safest source is each supplier's own press/partner kit.
+
 The single biggest remaining upgrade is photographing their own stock and bench —
 the `figure` block and the `.media` / `.media-plate` primitives are already wired for
 it, so it is a drop-in replacement in `content/images.ts`.

@@ -44,6 +44,53 @@ export const serviceImages: Record<string, ImageAsset> = {
   "electrician-auto": { src: "/img/s-electrician-auto.jpg", width: 1400, height: 1104 },
 };
 
+/**
+ * Supplier brand logos for the homepage strip.
+ *
+ * Only brands whose CURRENT, correct mark exists under a free licence are here.
+ * Wikimedia Commons had no usable file for the remaining suppliers, and its
+ * name-matches were different companies entirely ("LUK" returned Lukoil, "MEGA"
+ * returned Mega Man). Those brands stay as text rather than shipping a wrong
+ * logo — see `otherBrands` and `Marquee`.
+ *
+ * `ratio` is width/height, taken from each file's viewBox, so the strip can size
+ * every mark to one optical height without layout shift.
+ */
+export interface BrandLogo {
+  src: string;
+  label: string;
+  ratio: number;
+}
+
+export const brandLogos: BrandLogo[] = [
+  { src: "/img/brands/bosch.svg", label: "Bosch", ratio: 4.464 },
+  { src: "/img/brands/valeo.svg", label: "Valeo", ratio: 2.105 },
+  { src: "/img/brands/denso.svg", label: "Denso", ratio: 5.0 },
+  { src: "/img/brands/acdelco.svg", label: "ACDelco", ratio: 4.938 },
+  { src: "/img/brands/marelli.png", label: "Magneti Marelli", ratio: 1.231 },
+  { src: "/img/brands/ina.svg", label: "INA", ratio: 1.0 },
+  { src: "/img/brands/luk.svg", label: "LuK", ratio: 1.325 },
+];
+
+/** Stocked brands with no free logo file — shown as text, never as a fake mark. */
+export const otherBrands = [
+  "ZEN",
+  "CARGO",
+  "BYPART",
+  "TYPER",
+  "MEA",
+  "WAI",
+  "GHIBAUDI",
+  "ORME",
+  "ZM",
+  "MOBILETRON",
+  "TRANSPO",
+  "UTM",
+  "IKA (GEBE)",
+  "MEGA",
+  "SNR",
+] as const;
+
 export interface Credit {
   files: string[];
   title: string;
@@ -136,6 +183,22 @@ export const credits: Credit[] = [
     author: "Wikimedia Commons contributor",
     licence: "CC BY-SA 3.0",
     source: "https://commons.wikimedia.org/wiki/File:Alternator.jpg",
+  },
+  {
+    files: [
+      "/img/brands/bosch.svg",
+      "/img/brands/valeo.svg",
+      "/img/brands/denso.svg",
+      "/img/brands/acdelco.svg",
+      "/img/brands/marelli.png",
+      "/img/brands/ina.svg",
+      "/img/brands/luk.svg",
+    ],
+    title:
+      "Supplier brand logos — shown to identify stocked brands (nominative use). Trademarks of their respective owners.",
+    author: "Bosch, Valeo, Denso, ACDelco, Marelli, INA, LuK",
+    licence: "PD-textlogo / trademark of the owner",
+    source: "https://commons.wikimedia.org/wiki/Category:Automotive_company_logos",
   },
   {
     files: ["/img/s-electrician-auto.jpg"],

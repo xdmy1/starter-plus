@@ -23,7 +23,6 @@ export default async function HomePage({
   const { home, common } = dict;
   const at = (path: string) => localePath(locale, path);
   const groups = partGroupLabels[locale];
-  const brands = [...site.brands.original, ...site.brands.licensed];
 
   return (
     <>
@@ -134,7 +133,10 @@ export default async function HomePage({
         </div>
       </section>
 
-      <Marquee items={brands} label={home.brandsSection.title} />
+      <Marquee
+        label={home.brandsSection.title}
+        moreLabel={locale === "ro" ? "și de asemenea" : "а также"}
+      />
 
       {/* ------------------------------------------------------------ services */}
       <section className="section-tight">
