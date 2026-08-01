@@ -364,7 +364,7 @@ const items: DocMap = {
         head: ["EXECUTANT", "BENEFICIAR"],
         rows: [
           ["„STARTER PLUS” SRL", "______________________________________"],
-          ["Moldova, mun. Chișinău, str. Uzinelor 8/1", "______________________________________"],
+          ["Moldova, mun. Chișinău, str. Uzinelor 104", "______________________________________"],
           ["IDNO 1009600031813", "______________________________________"],
           ["B.C. „Moldova-Agroindbank” S.A., fil. Buiucani", "______________________________________"],
           ["SWIFT AGRNMD2X832", "______________________________________"],
@@ -380,7 +380,7 @@ const items: DocMap = {
       {
         type: "cta",
         title: "Vreți să semnăm contractul?",
-        text: "Treceți pe la atelier, str. Uzinelor 8/1 — intrarea din str. Varnița — sau sunați și pregătim exemplarele.",
+        text: "Treceți pe la atelier, str. Uzinelor 104 (Lunca Bâcului 35 A) sau sunați și pregătim exemplarele.",
         label: "Contactați-ne",
         href: "contacte",
       },
@@ -409,7 +409,7 @@ const items: DocMap = {
         head: ["Denumire", "Date"],
         rows: [
           ["Denumirea completă", "„STARTER PLUS” SRL"],
-          ["Adresa juridică", "mun. Chișinău, str. Uzinelor 8/1"],
+          ["Adresa juridică", "mun. Chișinău, str. Uzinelor 104"],
           ["Cod fiscal / IDNO", "1009600031813"],
           ["Cont de decontare (c/d)", "22511403112"],
           ["IBAN", "MD93AG000000022511403112"],
@@ -422,7 +422,7 @@ const items: DocMap = {
         ],
       },
       { type: "h2", text: "Atelierul" },
-      { type: "p", text: "Atelierul se află la aceeași adresă cu sediul juridic: mun. Chișinău, str. Uzinelor 8/1. Intrarea în curte este din str. Varnița." },
+      { type: "p", text: "Atelierul se află la aceeași adresă cu sediul juridic: mun. Chișinău, str. Uzinelor 104. Adresa apare și ca Lunca Bâcului 35 A." },
       {
         type: "table",
         head: ["Zi", "Program"],
@@ -453,7 +453,7 @@ const items: DocMap = {
     ],
     seo: {
       title: "Rechizite STARTER PLUS SRL: date juridice și bancare",
-      description: "Rechizitele complete ale STARTER PLUS SRL, Chișinău, str. Uzinelor 8/1: IDNO, cont de decontare, IBAN, cod TVA, banca, SWIFT, e-mail și telefoane de contact.",
+      description: "Rechizitele complete ale STARTER PLUS SRL, Chișinău, str. Uzinelor 104: IDNO, cont de decontare, IBAN, cod TVA, banca, SWIFT, e-mail și telefoane de contact.",
     },
   },
 };

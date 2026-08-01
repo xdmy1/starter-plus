@@ -4,7 +4,7 @@ export const article: Article = {
   title: "Atelierul nostru",
   short: "Atelierul nostru",
   excerpt:
-    "Două fotografii din hala din str. Uzinelor 8/1 și ce înseamnă, practic, un atelier care face doar demaroare și alternatoare.",
+    "Două fotografii din hala din str. Uzinelor 104 și ce înseamnă, practic, un atelier care face doar demaroare și alternatoare.",
   lead: "Un service general „face și electrică”: demontează demarorul, îl înlocuiește cu altul și trece la mașina următoare. Un atelier specializat face altceva — desface agregatul și măsoară fiecare piesă din el. De aici vine diferența, atât la diagnostic, cât și la nota de plată.",
   highlights: [
     "Atelier dedicat demaroarelor și alternatoarelor, nu un service general",
@@ -14,7 +14,7 @@ export const article: Article = {
   body: [
     {
       type: "p",
-      text: "Practic, asta înseamnă un banc de probă și un raft de piese pentru demaroare și alternatoare: bendixuri, rotoare, relee de cuplare, punți de diode, relee regulatoare de tensiune, perii colectoare, bucșe și rulmenți. Când agregatul dumneavoastră este desfăcut pe masă, piesa de schimb se caută pe raftul din atelier, nu într-un catalog. Suntem una dintre primele firme din Moldova specializate în repararea demaroarelor și alternatoarelor pentru autoturisme și camioane, iar tot ce vedeți mai jos este hala din str. Uzinelor 8/1.",
+      text: "Practic, asta înseamnă un banc de probă și un raft de piese pentru demaroare și alternatoare: bendixuri, rotoare, relee de cuplare, punți de diode, relee regulatoare de tensiune, perii colectoare, bucșe și rulmenți. Când agregatul dumneavoastră este desfăcut pe masă, piesa de schimb se caută pe raftul din atelier, nu într-un catalog. Suntem una dintre primele firme din Moldova specializate în repararea demaroarelor și alternatoarelor pentru autoturisme și camioane, iar tot ce vedeți mai jos este hala din str. Uzinelor 104.",
     },
     {
       type: "figure",
@@ -22,7 +22,7 @@ export const article: Article = {
       width: 832,
       height: 624,
       alt: "Hala acoperită a atelierului Starter Plus: autoturisme parcate pe rânduri, câteva cu capota ridicată, un mecanic lucrând la un motor.",
-      caption: "O zi obișnuită de lucru în hala din str. Uzinelor 8/1, cu intrare din str. Varnița.",
+      caption: "O zi obișnuită de lucru în hala din str. Uzinelor 104 (Lunca Bâcului 35 A).",
     },
     { type: "h2", text: "Ce se întâmplă cu un demaror sau un alternator ajuns la noi" },
     {
@@ -69,7 +69,7 @@ export const article: Article = {
     {
       type: "cta",
       title: "Veniți cu agregatul la noi",
-      text: "str. Uzinelor 8/1, Chișinău, intrare din str. Varnița. Luni–vineri 09:00–18:00, sâmbătă 09:00–16:00.",
+      text: "str. Uzinelor 104, Chișinău (Lunca Bâcului 35 A). Luni–vineri 09:00–18:00, sâmbătă 09:00–16:00.",
       label: "Contacte și hartă",
       href: "contacte",
     },
@@ -77,7 +77,7 @@ export const article: Article = {
   seo: {
     title: "Atelierul nostru: cum arată o zi de lucru",
     description:
-      "Fotografii din atelierul din str. Uzinelor 8/1, Chișinău, și ce înseamnă un atelier specializat doar pe demaroare și alternatoare: măsurători și probă pe banc.",
+      "Fotografii din atelierul din str. Uzinelor 104, Chișinău, și ce înseamnă un atelier specializat doar pe demaroare și alternatoare: măsurători și probă pe banc.",
   },
   date: "2021-05-06",
   readingMinutes: 2,

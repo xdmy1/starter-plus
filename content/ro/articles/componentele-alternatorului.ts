@@ -115,7 +115,7 @@ export const article: Article = {
     {
       type: "cta",
       title: "Verificăm alternatorul înainte să schimbați piese",
-      text: "Atelierul este în str. Uzinelor 8/1, intrarea din str. Varnița. Examinarea și devizul se fac în ziua în care primim agregatul.",
+      text: "Atelierul este în str. Uzinelor 104 (Lunca Bâcului 35 A). Examinarea și devizul se fac în ziua în care primim agregatul.",
       label: "Reparație alternatoare",
       href: "servicii/reparatii-alternatoare",
     },

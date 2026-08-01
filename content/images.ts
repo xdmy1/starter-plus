@@ -19,7 +19,7 @@ export interface ImageAsset {
 
 export const heroImage: ImageAsset = {
   src: "/img/hero-atelier.jpg",
-  width: 934,
+  width: 1120,
   height: 1400,
 };
 
@@ -29,7 +29,7 @@ export const partImages: Record<string, ImageAsset> = {
   bendix: { src: "/img/p-bendix.jpg", width: 1200, height: 900 },
   "rotor-demaror": { src: "/img/p-rotor-demaror.jpg", width: 1400, height: 932, plate: true },
   "releu-cuplare": { src: "/img/p-releu-cuplare.jpg", width: 1200, height: 900 },
-  alternatoare: { src: "/img/p-alternatoare.jpg", width: 1400, height: 933 },
+  alternatoare: { src: "/img/p-alternatoare.jpg", width: 1400, height: 925 },
   "rotor-alternator": { src: "/img/p-rotor-alternator.jpg", width: 1400, height: 869 },
   "fulie-alternator": { src: "/img/p-fulie-alternator.jpg", width: 1200, height: 900 },
   "releu-regulator": { src: "/img/p-releu-regulator.jpg", width: 1044, height: 1400 },
@@ -115,11 +115,11 @@ export const credits: Credit[] = [
     source: "https://starterplus.md",
   },
   {
-    files: ["/img/hero-atelier.jpg"],
-    title: "Car mechanic worker repairing suspension of lifted automobile at auto repair garage shop",
-    author: "Wikimedia Commons contributor",
-    licence: "CC BY 2.0",
-    source: "https://commons.wikimedia.org/wiki/File:Car_mechanic_worker_repairing_suspension_of_lifted_automobile_at_auto_repair_garage_shop.jpg",
+    files: ["/img/logo.png", "/img/logo-light.png", "/img/logo-mark.png"],
+    title: "Logo Starter Plus",
+    author: "Starter Plus SRL",
+    licence: "© Starter Plus SRL",
+    source: "https://starterplus.md",
   },
   {
     files: ["/img/p-demaroare.jpg", "/img/p-bendix.jpg", "/img/p-releu-cuplare.jpg"],
@@ -136,8 +136,8 @@ export const credits: Credit[] = [
     source: "https://commons.wikimedia.org/wiki/File:Kommutator_universalmotor_stab.jpg",
   },
   {
-    files: ["/img/p-alternatoare.jpg", "/img/p-fulie-alternator.jpg"],
-    title: "Car alternator on a workbench surrounded by various auto parts in a garage (also cropped for the pulley)",
+    files: ["/img/hero-atelier.jpg", "/img/p-alternatoare.jpg", "/img/p-fulie-alternator.jpg"],
+    title: "Car alternator on a workbench surrounded by various auto parts in a garage (cropped for the hero, the category card and the pulley)",
     author: "Wikimedia Commons contributor",
     licence: "CC BY 2.0",
     source: "https://commons.wikimedia.org/wiki/File:Car_alternator_on_a_workbench_surrounded_by_various_auto_parts_in_a_garage.jpg",

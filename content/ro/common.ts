@@ -51,7 +51,7 @@ export const common: Common = {
     quickContact: "Contact rapid",
     workingHours: "Program de lucru",
     findUs: "Cum ne găsiți",
-    entranceNote: "intrare din str. Varnița",
+    entranceNote: "Lunca Bâcului 35 A",
     since: "Pe piață din",
     guarantee: "Garanție",
     highlights: "Pe scurt",

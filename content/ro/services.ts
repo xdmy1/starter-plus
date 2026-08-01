@@ -6,7 +6,7 @@ const index: Doc = {
   excerpt:
     "Reparăm demaroare și alternatoare pentru autoturisme, camioane și utilaj special și rezolvăm defecțiunile instalației electrice auto — totul într-un singur atelier din Chișinău.",
   lead:
-    "Suntem una dintre primele firme din Moldova specializate în repararea demaroarelor și alternatoarelor pentru autoturisme și camioane. Lucrăm în str. Uzinelor 8/1, cu intrarea din str. Varnița, și ținem pe stoc piesele de care depinde reparația.",
+    "Suntem una dintre primele firme din Moldova specializate în repararea demaroarelor și alternatoarelor pentru autoturisme și camioane. Lucrăm în str. Uzinelor 104 (Lunca Bâcului 35 A), și ținem pe stoc piesele de care depinde reparația.",
   highlights: [
     "Reparații de demaroare și alternatoare pentru autoturisme, camioane și utilaj special.",
     "Diagnosticare pe agregatul demontat și probă pe bancul de probă înainte de predare.",
@@ -47,7 +47,7 @@ const index: Doc = {
     {
       type: "ol",
       items: [
-        "Aduceți agregatul demontat sau automobilul întreg la atelier, în str. Uzinelor 8/1 — intrarea din str. Varnița.",
+        "Aduceți agregatul demontat sau automobilul întreg la atelier, în str. Uzinelor 104 (Lunca Bâcului 35 A).",
         "Desfacem piesa, o curățăm și stabilim ce s-a defectat și din ce cauză.",
         "Vă comunicăm devizul. Nimic nu se înlocuiește până nu confirmați prețul.",
         "Dacă renunțați la reparație, asamblăm agregatul și vi-l returnăm în starea în care l-am primit.",
@@ -177,7 +177,7 @@ const items: DocMap = {
       {
         type: "cta",
         title: "Programați reparația demarorului",
-        text: "Sunați la 069 30 77 08 sau 079 30 77 08. Atelierul este în str. Uzinelor 8/1, Chișinău, cu intrarea din str. Varnița. Luni–vineri 09:00–18:00, sâmbătă 09:00–16:00.",
+        text: "Sunați la 069 30 77 08 sau 079 30 77 08. Atelierul este în str. Uzinelor 104, Chișinău (Lunca Bâcului 35 A). Luni–vineri 09:00–18:00, sâmbătă 09:00–16:00.",
         label: "Contacte și hartă",
         href: "contacte",
       },
@@ -283,7 +283,7 @@ const items: DocMap = {
       {
         type: "cta",
         title: "Aduceți alternatorul la verificare",
-        text: "Sunați la 069 30 77 08 sau 079 30 77 08. Ne găsiți în str. Uzinelor 8/1, Chișinău, cu intrarea din str. Varnița. Luni–vineri 09:00–18:00, sâmbătă 09:00–16:00.",
+        text: "Sunați la 069 30 77 08 sau 079 30 77 08. Ne găsiți în str. Uzinelor 104, Chișinău (Lunca Bâcului 35 A). Luni–vineri 09:00–18:00, sâmbătă 09:00–16:00.",
         label: "Contacte și hartă",
         href: "contacte",
       },
@@ -386,7 +386,7 @@ const items: DocMap = {
       {
         type: "cta",
         title: "Sunați electricianul auto",
-        text: "079 10 77 08. Atelierul este în str. Uzinelor 8/1, Chișinău, cu intrarea din str. Varnița. Luni–vineri 09:00–18:00, sâmbătă 09:00–16:00.",
+        text: "079 10 77 08. Atelierul este în str. Uzinelor 104, Chișinău (Lunca Bâcului 35 A). Luni–vineri 09:00–18:00, sâmbătă 09:00–16:00.",
         label: "Contacte și hartă",
         href: "contacte",
       },

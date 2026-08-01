@@ -209,8 +209,21 @@ it, so it is a drop-in replacement in `content/images.ts`.
   mobile numbers only. It is retained in `lib/site.ts` as `landlineRetired` — move that entry
   into `phones` to bring it back. It is also omitted from the requisites table and from
   §12 of the cooperation contract, where the old site printed it.
+- **Address is str. Uzinelor 104, Chișinău**, which the client also gives as
+  Lunca Bâcului 35 A — both are shown. Coordinates `46.9956324, 28.9021466` were
+  geocoded from OpenStreetMap for house number 104; **worth confirming the exact pin.**
+  The previous address (Uzinelor 8/1, entrance from str. Varnița) and its whole
+  "come in from Varnița" explanation were removed from all 23 content files.
 - **Working hours are Mon–Fri 09:00–18:00, Sat 09:00–16:00, Sunday closed**, per the brief.
   The old site advertised Mon–Sat 09:00–18:00.
+- **No contact form.** The client asked for it to be removed ("nu ne trebuiesc mesaje"), so
+  `ContactForm.tsx`, `/api/contact` and `lib/contact.ts` are gone. The `common.form` strings
+  remain in both dictionaries so it can be restored from git history in one step.
+- **Terminology mismatch, open question.** The client's own homepage copy says *startere* and
+  *generatoare*; the rest of the site (and the URLs `/piese/demaroare`, `/servicii/reparatii-
+  demaroare`) uses the more formal *demaroare* / *alternatoare*. Only the homepage was
+  changed, as asked. Renaming site-wide is a one-file change in `content/taxonomy.ts` plus
+  copy edits, but it changes URLs — so it needs a decision first.
 - **`079 10 77 08`** is the auto-electrician / diagnostics line. The old service page printed
   `079 30 77 08` there, contradicting its own homepage; the homepage number is used.
 - **The voltage-regulator catalog page was rewritten.** On the live site it has the rotor

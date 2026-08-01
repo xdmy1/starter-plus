@@ -146,7 +146,7 @@ export const article: Article = {
     {
       type: "cta",
       title: "Nu sunteți sigur ce piesă a cedat?",
-      text: "Aduceți demarorul în atelierul din str. Uzinelor 8/1, intrarea din str. Varnița. Examinarea și devizul se fac în ziua în care primim agregatul.",
+      text: "Aduceți demarorul în atelierul din str. Uzinelor 104 (Lunca Bâcului 35 A). Examinarea și devizul se fac în ziua în care primim agregatul.",
       label: "Reparație demaroare",
       href: "servicii/reparatii-demaroare",
     },

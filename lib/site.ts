@@ -57,23 +57,30 @@ export const site = {
   email: "starter-plus@mail.ru",
 
   address: {
-    street: "str. Uzinelor 8/1",
+    street: "str. Uzinelor 104",
+    /** The same premises are also addressed as Lunca Bâcului 35 A. */
+    alias: "Lunca Bâcului 35 A",
     city: "Chișinău",
     region: "mun. Chișinău",
     country: "MD",
     countryName: "Moldova",
+    postalCode: "MD-2107",
   },
 
+  /**
+   * str. Uzinelor 104, sectorul Ciocana. Geocoded from OpenStreetMap for the
+   * new address — worth confirming the exact pin with the workshop.
+   */
   geo: {
-    lat: 46.9928749,
-    lng: 28.9050486,
+    lat: 46.9956324,
+    lng: 28.9021466,
   },
 
-  mapsUrl: "https://maps.google.com/maps?q=46.9928749,28.9050486",
+  mapsUrl: "https://maps.google.com/maps?q=46.9956324,28.9021466",
   mapsDirectionsUrl:
-    "https://www.google.com/maps/dir/?api=1&destination=46.9928749,28.9050486",
+    "https://www.google.com/maps/dir/?api=1&destination=46.9956324,28.9021466",
   mapsEmbedUrl:
-    "https://www.google.com/maps?q=46.9928749,28.9050486&z=17&output=embed",
+    "https://www.google.com/maps?q=46.9956324,28.9021466&z=17&output=embed",
 
   /**
    * Working hours per client instruction:
@@ -105,7 +112,7 @@ export const site = {
 
   /** Legal + banking details, verbatim from the requisites page. */
   company: {
-    legalAddress: "mun. Chișinău, str. Uzinelor 8/1",
+    legalAddress: "mun. Chișinău, str. Uzinelor 104",
     codFiscal: "1009600031813",
     idno: "1009600031813",
     account: "22511403112",

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
@@ -106,15 +107,17 @@ export function Header({ locale, nav, labels, langLabels, hoursLine }: Props) {
           {/* brand */}
           <Link
             href={`/${locale}`}
-            className="flex shrink-0 items-baseline gap-1"
+            className="flex shrink-0 items-center"
             aria-label={site.name}
           >
-<span className="text-[1.1rem] font-semibold uppercase leading-none tracking-[-0.01em] text-ink">
-              Starter
-            </span>
-            <span className="bg-accent px-1.5 py-0.5 text-[1.1rem] font-semibold uppercase leading-none tracking-[-0.01em] text-accent-ink">
-              Plus
-            </span>
+            <Image
+              src="/img/logo.png"
+              alt={site.name}
+              width={760}
+              height={193}
+              priority
+              className="h-[34px] w-auto"
+            />
           </Link>
 
           {/* desktop nav — the mega panel is anchored to the nav, not the item,

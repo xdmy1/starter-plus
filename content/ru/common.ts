@@ -51,7 +51,7 @@ export const common: Common = {
     quickContact: "Быстрая связь",
     workingHours: "Часы работы",
     findUs: "Как нас найти",
-    entranceNote: "въезд с улицы Варница",
+    entranceNote: "Лунка Быкулуй 35 A",
     since: "На рынке с",
     guarantee: "Гарантия",
     highlights: "Коротко",

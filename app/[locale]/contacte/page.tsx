@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 
 import { Blocks } from "@/components/Blocks";
-import { ContactForm } from "@/components/ContactForm";
 import { Hours } from "@/components/Hours";
 import { Icon } from "@/components/Icon";
 import { BreadcrumbJsonLd, FaqJsonLd } from "@/components/JsonLd";
@@ -9,7 +8,6 @@ import { MapFrame } from "@/components/MapFrame";
 import { OpenBadge } from "@/components/OpenBadge";
 import { PageHero } from "@/components/PageHero";
 import { SECTIONS } from "@/content/taxonomy";
-import { isContactDeliveryConfigured } from "@/lib/contact";
 import { localePath } from "@/lib/locales";
 import { docMetadata, loadPage } from "@/lib/page";
 import { site } from "@/lib/site";
@@ -25,7 +23,7 @@ export default async function ContactPage({ params }: Params) {
   const { locale, dict } = await loadPage(params);
   const at = (path: string) => localePath(locale, path);
   const doc = dict.contact;
-  const { labels, cta, form } = dict.common;
+  const { labels, cta } = dict.common;
 
   const faqBlock = doc.body.find((block) => block.type === "faq");
   const faqItems = faqBlock?.type === "faq" ? faqBlock.items : [];
@@ -54,16 +52,8 @@ export default async function ContactPage({ params }: Params) {
       {/* form + contact tiles */}
       <section className="section-tight !pt-0">
         <div className="shell">
-          <div className="grid gap-[clamp(20px,3vw,40px)] lg:grid-cols-2">
-            <div data-reveal>
-              <ContactForm
-                form={form}
-                cta={{ send: cta.send, sending: cta.sending }}
-                mode={isContactDeliveryConfigured() ? "api" : "compose"}
-              />
-            </div>
-
-            <div className="flex flex-col gap-[clamp(14px,1.6vw,18px)]">
+          <div className="grid gap-[clamp(14px,1.6vw,18px)] lg:grid-cols-3">
+            <>
               {/* address */}
               <a
                 href={site.mapsUrl}
@@ -129,7 +119,7 @@ export default async function ContactPage({ params }: Params) {
                 <span className="micro block">{labels.workingHours}</span>
                 <Hours labels={labels} className="mt-3" />
               </div>
-            </div>
+            </>
           </div>
         </div>
       </section>

@@ -3,7 +3,7 @@ import type { Doc, DocMap } from "@/content/types";
 const index: Doc = {
   title: "Piese și componente pentru demaroare și alternatoare",
   short: "Piese și componente",
-  excerpt: "Stoc permanent de piese pentru demaroare și alternatoare de autoturisme, camioane și utilaj special, la Chișinău, pe str. Uzinelor 8/1.",
+  excerpt: "Stoc permanent de piese pentru demaroare și alternatoare de autoturisme, camioane și utilaj special, la Chișinău, pe str. Uzinelor 104.",
   lead: "Zece categorii, un singur depozit. Vindem atât agregate complete — demaroare și alternatoare noi sau recondiționate — cât și piesa exactă care s-a defectat: bendix, rotor, releu de cuplare, fulie, releu regulator, perii. Dacă nu știți ce anume a cedat, aduceți agregatul la atelier: îl testăm pe banc și vă spunem ce trebuie schimbat.",
   highlights: [
     "Piese pentru demaroare și alternatoare de autoturisme, camioane și utilaj special",
@@ -50,14 +50,14 @@ const index: Doc = {
     {
       type: "cta",
       title: "Nu găsiți categoria potrivită?",
-      text: "Sunați și descrieți simptomul sau aduceți agregatul la str. Uzinelor 8/1 — intrarea din str. Varnița.",
+      text: "Sunați și descrieți simptomul sau aduceți agregatul la str. Uzinelor 104 (Lunca Bâcului 35 A).",
       label: "Contacte și program",
       href: "contacte",
     },
   ],
   seo: {
     title: "Piese pentru demaroare și alternatoare în Chișinău",
-    description: "Catalog de piese pentru demaroare și alternatoare: bendixuri, rotoare, relee de cuplare, fulii, regulatoare de tensiune, perii. Stoc în Chișinău, Uzinelor 8/1.",
+    description: "Catalog de piese pentru demaroare și alternatoare: bendixuri, rotoare, relee de cuplare, fulii, regulatoare de tensiune, perii. Stoc în Chișinău, Uzinelor 104.",
   },
 };
 
@@ -557,7 +557,7 @@ const items: DocMap = {
       {
         type: "cta",
         title: "Nu știți ce perii vă trebuie?",
-        text: "Aduceți periile vechi sau suportul demontat la str. Uzinelor 8/1. Le comparăm pe loc — dimensiune, secțiune, lungimea conductorului — și vă dăm echivalentul corect.",
+        text: "Aduceți periile vechi sau suportul demontat la str. Uzinelor 104. Le comparăm pe loc — dimensiune, secțiune, lungimea conductorului — și vă dăm echivalentul corect.",
         label: "Contacte și program",
         href: "contacte",
       },
@@ -634,7 +634,7 @@ const items: DocMap = {
     ],
     seo: {
       title: "Piese pentru demaroare și alternatoare — alte piese",
-      description: "Bucșe, rulmenți, capace, furci, reductoare, punți de diode, fulii și kituri de reparație pentru demaroare și alternatoare. Stoc la Chișinău, Uzinelor 8/1.",
+      description: "Bucșe, rulmenți, capace, furci, reductoare, punți de diode, fulii și kituri de reparație pentru demaroare și alternatoare. Stoc la Chișinău, Uzinelor 104.",
     },
   },
 };

@@ -53,10 +53,6 @@ export default async function HomePage({
                   <Icon name="phone" size={16} />
                   {home.hero.primaryCta}
                 </a>
-                <Link href={at(SECTIONS.parts)} className="btn btn-ghost">
-                  {home.hero.secondaryCta}
-                  <Icon name="arrowRight" size={16} />
-                </Link>
               </div>
 
               <ul
@@ -81,8 +77,8 @@ export default async function HomePage({
                   src={heroImage.src}
                   alt={
                     locale === "ro"
-                      ? "Mecanic lucrând într-un atelier auto"
-                      : "Механик за работой в автосервисе"
+                      ? "Alternator auto demontat, pe bancul de lucru din atelier"
+                      : "Снятый автомобильный генератор на рабочем столе в мастерской"
                   }
                   width={heroImage.width}
                   height={heroImage.height}

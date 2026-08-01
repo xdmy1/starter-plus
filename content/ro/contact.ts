@@ -3,10 +3,10 @@ import type { Doc } from "@/content/types";
 export const contact: Doc & { formIntro?: string } = {
   title: "Contacte",
   short: "Contacte",
-  excerpt: "Atelierul se află pe str. Uzinelor 8/1, în Chișinău, iar intrarea în curte se face din str. Varnița — nu direct din Uzinelor.",
+  excerpt: "Atelierul se află pe str. Uzinelor 104, în Chișinău — aceeași adresă apare și ca Lunca Bâcului 35 A.",
   lead: "Puteți veni cu automobilul sau doar cu demarorul ori alternatorul demontat: verificăm ambele variante la atelier. Dacă nu sunteți sigur care este defecțiunea, sunați înainte și descrieți simptomul — de multe ori se clarifică la telefon.",
   highlights: [
-    "str. Uzinelor 8/1, Chișinău — intrare din str. Varnița",
+    "str. Uzinelor 104, Chișinău (Lunca Bâcului 35 A)",
     "Luni – Vineri 09:00 – 18:00 · Sâmbătă 09:00 – 16:00 · Duminică zi liberă",
     "Demaroare și alternatoare: 069 30 77 08, 079 30 77 08",
     "Electrician auto și diagnosticare: 079 10 77 08",
@@ -17,11 +17,11 @@ export const contact: Doc & { formIntro?: string } = {
     { type: "h2", text: "Cum ajungeți la atelier" },
     {
       type: "p",
-      text: "Atelierul este în zona industrială de pe str. Uzinelor, la numărul 8/1. Se ajunge ușor cu automobilul, inclusiv cu camioane și utilaj special, pentru că accesul se face pe drumul de serviciu, nu prin curți de bloc.",
+      text: "Atelierul este în zona industrială de pe str. Uzinelor, la numărul 104. Se ajunge ușor cu automobilul, inclusiv cu camioane și utilaj special, pentru că accesul se face pe drumul de serviciu, nu prin curți de bloc.",
     },
     {
       type: "note",
-      text: "Intrarea în curte este din str. Varnița, nu din str. Uzinelor. Fațada de pe Uzinelor nu are acces auto, așa că navigația care vă duce la numărul 8/1 dinspre Uzinelor vă lasă în fața unui gard. Ocoliți pe str. Varnița și intrați pe poartă.",
+      text: "Adresa are două denumiri: str. Uzinelor 104 și Lunca Bâcului 35 A. Navigația poate afișa oricare dintre ele — este același loc. Dacă ajungeți și nu găsiți intrarea, sunați de la fața locului la 069 30 77 08.",
     },
     {
       type: "p",
@@ -135,6 +135,6 @@ export const contact: Doc & { formIntro?: string } = {
   ],
   seo: {
     title: "Contacte — atelier demaroare și alternatoare Chișinău",
-    description: "Adresa, telefoanele și programul atelierului Starter Plus din Chișinău: str. Uzinelor 8/1, intrarea din str. Varnița. Reparații demaroare și alternatoare.",
+    description: "Adresa, telefoanele și programul atelierului Starter Plus din Chișinău: str. Uzinelor 104 (Lunca Bâcului 35 A). Reparații demaroare și alternatoare.",
   },
 };

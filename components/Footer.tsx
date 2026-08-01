@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import { Hours } from "@/components/Hours";
@@ -28,13 +29,14 @@ export function Footer({ locale, dict }: Props) {
         <div className="grid gap-[clamp(28px,4vw,48px)] lg:grid-cols-[1.5fr_1fr_1fr_1.2fr]">
           {/* brand + address */}
           <div>
-            <Link href={at("")} className="flex items-baseline gap-1">
-<span className="text-[1.1rem] font-semibold uppercase leading-none tracking-[-0.01em] text-white">
-                Starter
-              </span>
-              <span className="bg-accent px-1.5 py-0.5 text-[1.1rem] font-semibold uppercase leading-none tracking-[-0.01em] text-accent-ink">
-                Plus
-              </span>
+            <Link href={at("")} className="flex items-center" aria-label={site.name}>
+              <Image
+                src="/img/logo-light.png"
+                alt={site.name}
+                width={760}
+                height={193}
+                className="h-[36px] w-auto"
+              />
             </Link>
 
             <p className="mt-4 max-w-[34ch] text-[0.92rem] text-white/55">
@@ -149,6 +151,14 @@ export function Footer({ locale, dict }: Props) {
             <Link href={at("credite")} className="transition-colors hover:text-accent">
               {locale === "ro" ? "Credite foto" : "Фото: источники"}
             </Link>
+            <a
+              href="https://landings.md"
+              target="_blank"
+              rel="noreferrer"
+              className="transition-colors hover:text-accent"
+            >
+              Creare website - landings.md
+            </a>
           </p>
         </div>
       </div>

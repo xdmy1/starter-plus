@@ -65,7 +65,7 @@ export const article: Article = {
     {
       type: "cta",
       title: "Scrâșnet sau clicuri la pornire?",
-      text: "Verificăm demarorul la stand, în atelierul din str. Uzinelor 8/1, și vă spunem exact ce piesă a cedat.",
+      text: "Verificăm demarorul la stand, în atelierul din str. Uzinelor 104, și vă spunem exact ce piesă a cedat.",
       label: "Reparație demaroare",
       href: "servicii/reparatii-demaroare",
     },
