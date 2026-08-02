@@ -190,6 +190,8 @@ export interface Home {
     eyebrow: string;
     title: string;
     titleAccent: string;
+    /** Second service headline, rendered bold under the h1. */
+    boldLine?: string;
     subtitle: string;
     primaryCta: string;
     secondaryCta: string;

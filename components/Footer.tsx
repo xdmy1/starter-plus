@@ -33,8 +33,8 @@ export function Footer({ locale, dict }: Props) {
               <Image
                 src="/img/logo-light.png"
                 alt={site.name}
-                width={760}
-                height={193}
+                width={860}
+                height={181}
                 className="h-[36px] w-auto"
               />
             </Link>

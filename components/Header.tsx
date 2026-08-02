@@ -113,8 +113,8 @@ export function Header({ locale, nav, labels, langLabels, hoursLine }: Props) {
             <Image
               src="/img/logo.png"
               alt={site.name}
-              width={760}
-              height={193}
+              width={860}
+              height={181}
               priority
               className="h-[34px] w-auto"
             />

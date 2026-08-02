@@ -44,7 +44,16 @@ export default async function HomePage({
                 <span className="mark">{home.hero.titleAccent}</span>
               </h1>
 
-              <p data-reveal className="lead mt-6 max-w-[48ch]">
+              {home.hero.boldLine && (
+                <p
+                  data-reveal
+                  className="mt-5 text-[clamp(1.15rem,1.5vw,1.45rem)] font-semibold tracking-[-0.015em] text-ink"
+                >
+                  {home.hero.boldLine}
+                </p>
+              )}
+
+              <p data-reveal className="lead mt-4 max-w-[48ch]">
                 {home.hero.subtitle}
               </p>
 

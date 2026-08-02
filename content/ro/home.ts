@@ -9,7 +9,8 @@ export const home: Home = {
     eyebrow: "Atelier de startere și generatoare · str. Uzinelor 104, Chișinău",
     title: "Reparația calitativă a starterelor și",
     titleAccent: "generatoarelor auto",
-    subtitle: "Electrician auto. Avem în stoc startere și generatoare noi, uzate și recondiționate. Autoturisme, camioane, tehnică specială și utilaj special. Garanție oficială până la 12 luni!",
+    boldLine: "Electrician auto.",
+    subtitle: "Avem în stoc startere și generatoare noi, uzate și recondiționate. Autoturisme, camioane, tehnică specială și utilaj special. Garanție oficială până la 12 luni!",
     primaryCta: "Sunați: 069 30 77 08",
     secondaryCta: "Vedeți piesele pe stoc",
     stats: [
