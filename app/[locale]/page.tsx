@@ -79,13 +79,13 @@ export default async function HomePage({
 
             {/* real photograph, not a generated graphic */}
             <div data-reveal className="relative">
-              <div className="card media media-plate aspect-[4/3] w-full">
+              <div className="card media aspect-[3/2] w-full">
                 <Image
                   src={heroImage.src}
                   alt={
                     locale === "ro"
-                      ? "Demaror auto recondiționat, gata de montaj"
-                      : "Восстановленный автомобильный стартер, готовый к установке"
+                      ? "Demaror și alternator auto pe bancul de lucru din atelier"
+                      : "Автомобильный стартер и генератор на рабочем столе в мастерской"
                   }
                   width={heroImage.width}
                   height={heroImage.height}

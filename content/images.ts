@@ -18,9 +18,9 @@ export interface ImageAsset {
 }
 
 export const heroImage: ImageAsset = {
-  src: "/img/hero-starter.jpg",
-  width: 1400,
-  height: 1050,
+  src: "/img/hero-workshop.jpg",
+  width: 1600,
+  height: 1066,
 };
 
 /** Keyed by part-category slug. */
@@ -115,6 +115,13 @@ export const credits: Credit[] = [
     source: "https://starterplus.md",
   },
   {
+    files: ["/img/hero-workshop.jpg"],
+    title: "Demaror și alternator pe bancul de lucru (fotografie furnizată de client)",
+    author: "Starter Plus SRL",
+    licence: "Furnizată de client / provided by the client",
+    source: "https://starterplus.md",
+  },
+  {
     files: ["/img/logo.png", "/img/logo-light.png", "/img/logo-mark.png"],
     title: "Logo Starter Plus",
     author: "Starter Plus SRL",
@@ -122,8 +129,8 @@ export const credits: Credit[] = [
     source: "https://starterplus.md",
   },
   {
-    files: ["/img/hero-starter.jpg", "/img/p-demaroare.jpg", "/img/p-bendix.jpg", "/img/p-releu-cuplare.jpg"],
-    title: "Automobile starter (used for the homepage hero, and cropped for the catalogue card, the drive pinion and the solenoid)",
+    files: ["/img/p-demaroare.jpg", "/img/p-bendix.jpg", "/img/p-releu-cuplare.jpg"],
+    title: "Automobile starter (cropped for the catalogue card, the drive pinion and the solenoid)",
     author: "Wikimedia Commons contributor",
     licence: "CC BY-SA 3.0",
     source: "https://commons.wikimedia.org/wiki/File:Automobile_starter.JPG",
