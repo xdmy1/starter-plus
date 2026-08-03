@@ -17,6 +17,22 @@ export const partGroupLabels: Record<Locale, Record<"starter" | "alternator" | "
   },
 };
 
+/**
+ * What each phone line is for, shown beside the number on the contacts page.
+ * Both repair lines cover starters AND alternators — the client asked for both
+ * to be named, shortened to a slash pair so it fits the narrow label column.
+ */
+export const phoneRoleLabels: Record<Locale, Record<"repairs" | "autoElectric", string>> = {
+  ro: {
+    repairs: "Startere / generatoare",
+    autoElectric: "Electrician auto",
+  },
+  ru: {
+    repairs: "Стартеры / генераторы",
+    autoElectric: "Автоэлектрик",
+  },
+};
+
 /** Short label for the "everything" chip in the catalog filter. */
 export const allPartsLabel: Record<Locale, string> = {
   ro: "Toate piesele",

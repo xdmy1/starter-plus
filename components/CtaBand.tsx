@@ -25,7 +25,7 @@ export function CtaBand({ locale, title, text, primary, secondary }: Props) {
           <div data-reveal className="flex flex-wrap gap-3 lg:justify-end">
             <a href={site.primaryPhone.href} className="btn btn-accent">
               <Icon name="phone" size={16} />
-              {primary} {site.primaryPhone.display}
+              {primary}: <span className="figure-mono">{site.primaryPhone.display}</span>
             </a>
             <Link href={localePath(locale, "contacte")} className="btn btn-ghost">
               {secondary}

@@ -8,7 +8,7 @@ export const contact: Doc & { formIntro?: string } = {
   highlights: [
     "str. Uzinelor 104, Chișinău (Lunca Bâcului 35 A)",
     "Luni – Vineri 09:00 – 18:00 · Sâmbătă 09:00 – 16:00 · Duminică zi liberă",
-    "Demaroare și alternatoare: 069 30 77 08, 079 30 77 08",
+    "Startere și generatoare: 069 30 77 08, 079 30 77 08",
     "Electrician auto și diagnosticare: 079 10 77 08",
     "Examinare și deviz în ziua în care primim agregatul",
   ],
@@ -31,13 +31,13 @@ export const contact: Doc & { formIntro?: string } = {
     { type: "h2", text: "Telefoane" },
     {
       type: "p",
-      text: "Sunați direct pe linia de care aveți nevoie: la reparații răspunde atelierul de demaroare și alternatoare, la electrică răspunde electricianul auto.",
+      text: "Sunați direct pe linia de care aveți nevoie: la reparații răspunde atelierul de startere și generatoare, la electrică răspunde electricianul auto.",
     },
     {
       type: "table",
       head: ["Telefon", "Pentru ce sunați"],
       rows: [
-        ["069 30 77 08", "Reparație demaroare și alternatoare, comenzi de piese și componente"],
+        ["069 30 77 08", "Reparația starterelor și generatoarelor, comenzi de piese și componente"],
         ["079 30 77 08", "Aceleași solicitări, a doua linie — folosiți-o dacă prima este ocupată"],
         ["079 10 77 08", "Electrician auto și diagnosticare computerizată a automobilului"],
       ],

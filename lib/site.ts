@@ -68,19 +68,21 @@ export const site = {
   },
 
   /**
-   * str. Uzinelor 104, sectorul Ciocana. Geocoded from OpenStreetMap for the
-   * new address — worth confirming the exact pin with the workshop.
+   * The pin the client sent for the workshop. An OpenStreetMap geocode of
+   * "str. Uzinelor 104" landed ~350 m north-west of here and was wrong, so
+   * these coordinates are authoritative — do not re-derive them from the street
+   * address.
    */
   geo: {
-    lat: 46.9956324,
-    lng: 28.9021466,
+    lat: 46.9928749,
+    lng: 28.9050486,
   },
 
-  mapsUrl: "https://maps.google.com/maps?q=46.9956324,28.9021466",
+  mapsUrl: "https://maps.google.com/maps?q=46.9928749,28.9050486",
   mapsDirectionsUrl:
-    "https://www.google.com/maps/dir/?api=1&destination=46.9956324,28.9021466",
+    "https://www.google.com/maps/dir/?api=1&destination=46.9928749,28.9050486",
   mapsEmbedUrl:
-    "https://www.google.com/maps?q=46.9956324,28.9021466&z=17&output=embed",
+    "https://www.google.com/maps?q=46.9928749,28.9050486&z=17&output=embed",
 
   /**
    * Working hours per client instruction:

@@ -18,14 +18,14 @@ export interface ImageAsset {
 }
 
 export const heroImage: ImageAsset = {
-  src: "/img/hero-atelier.jpg",
-  width: 1120,
-  height: 1400,
+  src: "/img/hero-starter.jpg",
+  width: 1400,
+  height: 1050,
 };
 
 /** Keyed by part-category slug. */
 export const partImages: Record<string, ImageAsset> = {
-  demaroare: { src: "/img/p-demaroare.jpg", width: 1400, height: 1050, plate: true },
+  demaroare: { src: "/img/p-demaroare.jpg", width: 1200, height: 900, plate: true },
   bendix: { src: "/img/p-bendix.jpg", width: 1200, height: 900 },
   "rotor-demaror": { src: "/img/p-rotor-demaror.jpg", width: 1400, height: 932, plate: true },
   "releu-cuplare": { src: "/img/p-releu-cuplare.jpg", width: 1200, height: 900 },
@@ -122,8 +122,8 @@ export const credits: Credit[] = [
     source: "https://starterplus.md",
   },
   {
-    files: ["/img/p-demaroare.jpg", "/img/p-bendix.jpg", "/img/p-releu-cuplare.jpg"],
-    title: "Automobile starter (also cropped for the drive pinion and the solenoid)",
+    files: ["/img/hero-starter.jpg", "/img/p-demaroare.jpg", "/img/p-bendix.jpg", "/img/p-releu-cuplare.jpg"],
+    title: "Automobile starter (used for the homepage hero, and cropped for the catalogue card, the drive pinion and the solenoid)",
     author: "Wikimedia Commons contributor",
     licence: "CC BY-SA 3.0",
     source: "https://commons.wikimedia.org/wiki/File:Automobile_starter.JPG",
@@ -136,8 +136,8 @@ export const credits: Credit[] = [
     source: "https://commons.wikimedia.org/wiki/File:Kommutator_universalmotor_stab.jpg",
   },
   {
-    files: ["/img/hero-atelier.jpg", "/img/p-alternatoare.jpg", "/img/p-fulie-alternator.jpg"],
-    title: "Car alternator on a workbench surrounded by various auto parts in a garage (cropped for the hero, the category card and the pulley)",
+    files: ["/img/p-alternatoare.jpg", "/img/p-fulie-alternator.jpg"],
+    title: "Car alternator on a workbench surrounded by various auto parts in a garage (cropped for the category card and the pulley)",
     author: "Wikimedia Commons contributor",
     licence: "CC BY 2.0",
     source: "https://commons.wikimedia.org/wiki/File:Car_alternator_on_a_workbench_surrounded_by_various_auto_parts_in_a_garage.jpg",

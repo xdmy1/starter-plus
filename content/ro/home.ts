@@ -140,7 +140,7 @@ export const home: Home = {
   ctaBand: {
     title: "Aduceți agregatul la str. Uzinelor 104",
     text: "Adresa apare și ca Lunca Bâcului 35 A. Luni–vineri 09:00–18:00, sâmbătă 09:00–16:00, duminică — zi liberă. Sunați înainte cu marca, modelul și anul mașinii și vă spunem la telefon dacă piesa este pe stoc.",
-    primary: "Sunați: 069 30 77 08",
+    primary: "Sunați",
     secondary: "Trimiteți o solicitare",
   },
 };

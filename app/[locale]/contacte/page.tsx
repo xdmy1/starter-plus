@@ -7,6 +7,7 @@ import { BreadcrumbJsonLd, FaqJsonLd } from "@/components/JsonLd";
 import { MapFrame } from "@/components/MapFrame";
 import { OpenBadge } from "@/components/OpenBadge";
 import { PageHero } from "@/components/PageHero";
+import { phoneRoleLabels } from "@/content/groups";
 import { SECTIONS } from "@/content/taxonomy";
 import { localePath } from "@/lib/locales";
 import { docMetadata, loadPage } from "@/lib/page";
@@ -28,10 +29,7 @@ export default async function ContactPage({ params }: Params) {
   const faqBlock = doc.body.find((block) => block.type === "faq");
   const faqItems = faqBlock?.type === "faq" ? faqBlock.items : [];
 
-  const roleLabel: Record<string, string> = {
-    repairs: dict.services.items["reparatii-demaroare"]?.short ?? "",
-    autoElectric: dict.services.items["electrician-auto"]?.short ?? "",
-  };
+  const roleLabel = phoneRoleLabels[locale];
 
   return (
     <>
