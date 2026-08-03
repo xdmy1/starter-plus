@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import { Hours } from "@/components/Hours";
 import { Icon } from "@/components/Icon";
-import { SECTIONS, infoPages, partCategories, services } from "@/content/taxonomy";
+import { SECTIONS, infoPages, services } from "@/content/taxonomy";
 import type { Dictionary } from "@/content/types";
 import { localePath, type Locale } from "@/lib/locales";
 import { site } from "@/lib/site";
@@ -26,7 +26,7 @@ export function Footer({ locale, dict }: Props) {
   return (
     <footer className="band-dark mt-auto">
       <div className="shell pt-[clamp(48px,6vw,76px)]">
-        <div className="grid gap-[clamp(28px,4vw,48px)] lg:grid-cols-[1.5fr_1fr_1fr_1.2fr]">
+        <div className="grid gap-[clamp(28px,4vw,48px)] lg:grid-cols-[1.6fr_1fr_1.1fr]">
           {/* brand + address */}
           <div>
             <Link href={at("")} className="flex items-center" aria-label={site.name}>
@@ -78,20 +78,6 @@ export function Footer({ locale, dict }: Props) {
             </address>
           </div>
 
-          {/* catalog */}
-          <div>
-            <h2 className="micro mb-4">{footer.catalogTitle}</h2>
-            <ul className="space-y-2">
-              {partCategories.map((category) => (
-                <li key={category.slug}>
-                  <Link href={at(`${SECTIONS.parts}/${category.slug}`)} className={col}>
-                    {label(dict.parts.items, category.slug)}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
           {/* services + info */}
           <div className="space-y-7">
             <div>
@@ -120,6 +106,13 @@ export function Footer({ locale, dict }: Props) {
                 <li>
                   <Link href={at(SECTIONS.articles)} className={col}>
                     {nav.articles}
+                  </Link>
+                </li>
+                {/* One link only — the client removed the parts catalogue from
+                    the nav and the homepage, but the pages still exist. */}
+                <li>
+                  <Link href={at(SECTIONS.parts)} className={col}>
+                    {nav.parts}
                   </Link>
                 </li>
               </ul>

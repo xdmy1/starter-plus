@@ -1,5 +1,4 @@
-import { partGroupLabels } from "@/content/groups";
-import { SECTIONS, infoPages, partCategories, services } from "@/content/taxonomy";
+import { SECTIONS, infoPages, services } from "@/content/taxonomy";
 import type { Dictionary } from "@/content/types";
 
 import { localePath, type Locale } from "./locales";
@@ -31,33 +30,18 @@ export interface NavItem {
 export function buildNav(locale: Locale, dict: Dictionary): NavItem[] {
   const at = (path: string) => localePath(locale, path);
   const { nav } = dict.common;
-  const groups = partGroupLabels[locale];
 
-  const partLabel = (slug: string) =>
-    dict.parts.items[slug]?.short ?? dict.parts.items[slug]?.title ?? slug;
 
-  const starterParts = partCategories.filter((c) => c.group === "starter");
-  const alternatorParts = partCategories.filter((c) => c.group === "alternator");
-  const sharedParts = partCategories.filter((c) => c.group === "shared");
 
-  const toLinks = (list: typeof partCategories): NavLink[] =>
-    list.map((c) => ({
-      label: partLabel(c.slug),
-      href: at(`${SECTIONS.parts}/${c.slug}`),
-      icon: c.icon,
-    }));
 
+  /*
+   * Per the client, the header nav is Acasă / Servicii / Informații / Contacte
+   * only. The parts catalogue and the articles still exist as pages and stay
+   * linked from the footer and from the related-links blocks on each service —
+   * they are just not top-level navigation any more.
+   */
   return [
     { label: nav.home, href: at("") },
-    {
-      label: nav.parts,
-      href: at(SECTIONS.parts),
-      columns: [
-        { title: groups.starter, links: toLinks(starterParts) },
-        { title: groups.alternator, links: toLinks(alternatorParts) },
-        { title: groups.shared, links: toLinks(sharedParts) },
-      ],
-    },
     {
       label: nav.services,
       href: at(SECTIONS.services),
@@ -85,7 +69,6 @@ export function buildNav(locale: Locale, dict: Dictionary): NavItem[] {
         },
       ],
     },
-    { label: nav.articles, href: at(SECTIONS.articles) },
     { label: nav.contact, href: at(SECTIONS.contact) },
   ];
 }

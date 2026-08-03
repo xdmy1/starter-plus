@@ -7,9 +7,8 @@ import { Icon } from "@/components/Icon";
 import { FaqJsonLd } from "@/components/JsonLd";
 import { Marquee } from "@/components/Marquee";
 import { OpenBadge } from "@/components/OpenBadge";
-import { partGroupLabels } from "@/content/groups";
-import { heroImage, partImages, serviceImages } from "@/content/images";
-import { SECTIONS, partCategories, services } from "@/content/taxonomy";
+import { heroImage, serviceImages } from "@/content/images";
+import { SECTIONS, services } from "@/content/taxonomy";
 import { localePath } from "@/lib/locales";
 import { loadPage } from "@/lib/page";
 import { site } from "@/lib/site";
@@ -22,7 +21,6 @@ export default async function HomePage({
   const { locale, dict } = await loadPage(params);
   const { home, common } = dict;
   const at = (path: string) => localePath(locale, path);
-  const groups = partGroupLabels[locale];
 
   return (
     <>
@@ -192,82 +190,6 @@ export default async function HomePage({
                 </Link>
               );
             })}
-          </div>
-        </div>
-      </section>
-
-      {/* ------------------------------------------------------------- catalog */}
-      <section className="band-white section-tight">
-        <div className="shell">
-          <div
-            data-reveal
-            className="flex flex-wrap items-end justify-between gap-6"
-          >
-            <div className="section-head">
-              <p className="eyebrow">{home.partsSection.eyebrow}</p>
-              <h2 className="h2">{home.partsSection.title}</h2>
-            </div>
-            <Link href={at(SECTIONS.parts)} className="btn btn-ghost btn-sm">
-              {common.cta.viewCatalog}
-              <Icon name="arrowRight" size={15} />
-            </Link>
-          </div>
-
-          <p data-reveal className="lead mt-5 max-w-[68ch]">
-            {home.partsSection.text}
-          </p>
-
-          <div className="mt-[clamp(28px,3.5vw,44px)] space-y-9">
-            {(["starter", "alternator", "shared"] as const).map((group) => (
-              <div key={group}>
-                <p data-reveal className="micro mb-4">
-                  {groups[group]}
-                </p>
-                <div className="grid gap-[clamp(12px,1.4vw,18px)] sm:grid-cols-2 lg:grid-cols-4">
-                  {partCategories
-                    .filter((category) => category.group === group)
-                    .map((category) => {
-                      const doc = dict.parts.items[category.slug];
-                      const img = partImages[category.slug];
-                      if (!doc) return null;
-                      return (
-                        <Link
-                          key={category.slug}
-                          href={at(`${SECTIONS.parts}/${category.slug}`)}
-                          data-reveal
-                          className="card card-hover group overflow-hidden"
-                        >
-                          {img && (
-                            <div
-                              className={`media aspect-[4/3] ${
-                                img.plate ? "media-plate" : ""
-                              }`}
-                            >
-                              <Image
-                                src={img.src}
-                                alt={doc.short ?? doc.title}
-                                width={img.width}
-                                height={img.height}
-                                sizes="(max-width: 640px) 92vw, (max-width: 1024px) 45vw, 22vw"
-                              />
-                            </div>
-                          )}
-                          <div className="flex items-center justify-between gap-3 px-4 py-3.5">
-                            <span className="text-[0.94rem] font-medium tracking-[-0.018em] text-ink">
-                              {doc.short ?? doc.title}
-                            </span>
-                            <Icon
-                              name="arrowRight"
-                              size={16}
-                              className="shrink-0 text-ink-4 transition-all duration-400 group-hover:translate-x-0.5 group-hover:text-ink"
-                            />
-                          </div>
-                        </Link>
-                      );
-                    })}
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </section>
