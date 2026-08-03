@@ -7,6 +7,7 @@ import { Icon } from "@/components/Icon";
 import { FaqJsonLd } from "@/components/JsonLd";
 import { Marquee } from "@/components/Marquee";
 import { OpenBadge } from "@/components/OpenBadge";
+import { monthsWord } from "@/content/groups";
 import { handoverImage, heroImage, serviceImages } from "@/content/images";
 import { SECTIONS, services } from "@/content/taxonomy";
 import { localePath } from "@/lib/locales";
@@ -97,8 +98,8 @@ export default async function HomePage({
 
               {/* warranty marker, overlapping the photo */}
               <div className="absolute -bottom-5 left-5 rounded-lg bg-accent px-5 py-3.5 shadow-lift sm:left-auto sm:right-6">
-                <span className="figure-mono block text-[1.7rem] font-medium leading-none tracking-[-0.02em] text-accent-ink">
-                  {site.warranty.newMonths}
+                <span className="figure-mono block whitespace-nowrap text-[1.35rem] font-medium leading-none tracking-[-0.02em] text-accent-ink">
+                  {site.warranty.newMonths} {monthsWord[locale]}
                 </span>
                 <span className="mt-1 block text-[0.74rem] font-semibold uppercase tracking-[0.11em] text-accent-ink/70">
                   {common.labels.guarantee}

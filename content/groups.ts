@@ -33,6 +33,12 @@ export const phoneRoleLabels: Record<Locale, Record<"repairs" | "autoElectric", 
   },
 };
 
+/** Unit word for the warranty badge, so it reads "12 luni garanție". */
+export const monthsWord: Record<Locale, string> = {
+  ro: "luni",
+  ru: "месяцев",
+};
+
 /** Short label for the "everything" chip in the catalog filter. */
 export const allPartsLabel: Record<Locale, string> = {
   ro: "Toate piesele",

@@ -14,7 +14,7 @@ export const home: Home = {
     primaryCta: "Sunați: 069 30 77 08",
     secondaryCta: "Vedeți piesele pe stoc",
     stats: [
-      { value: "26 ani", label: "de lucru numai pe startere și generatoare" },
+      { value: "26 ani", label: "experiență în reparația starterelor și generatoarelor" },
       { value: "12 luni", label: "garanție la reparații și la agregatele noi" },
       { value: "4 tipuri", label: "autoturisme, camioane, motociclete, utilaj special" },
       { value: "30", label: "categorii de piese ținute pe stoc" },
