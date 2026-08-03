@@ -7,7 +7,7 @@ import { Icon } from "@/components/Icon";
 import { FaqJsonLd } from "@/components/JsonLd";
 import { Marquee } from "@/components/Marquee";
 import { OpenBadge } from "@/components/OpenBadge";
-import { heroImage, serviceImages } from "@/content/images";
+import { handoverImage, heroImage, serviceImages } from "@/content/images";
 import { SECTIONS, services } from "@/content/taxonomy";
 import { localePath } from "@/lib/locales";
 import { loadPage } from "@/lib/page";
@@ -79,13 +79,13 @@ export default async function HomePage({
 
             {/* real photograph, not a generated graphic */}
             <div data-reveal className="relative">
-              <div className="card media aspect-[3/2] w-full">
+              <div className="card media aspect-[4/5] w-full">
                 <Image
                   src={heroImage.src}
                   alt={
                     locale === "ro"
-                      ? "Demaror și alternator auto pe bancul de lucru din atelier"
-                      : "Автомобильный стартер и генератор на рабочем столе в мастерской"
+                      ? "Angajat Starter Plus cu un demaror și un alternator în mâini, în fața atelierului"
+                      : "Сотрудник Starter Plus со стартером и генератором в руках перед мастерской"
                   }
                   width={heroImage.width}
                   height={heroImage.height}
@@ -225,7 +225,21 @@ export default async function HomePage({
       <section className="band-white section-tight">
         <div className="shell">
           <div className="grid gap-[clamp(20px,2.5vw,32px)] lg:grid-cols-[1.35fr_0.65fr]">
-            <div data-reveal className="panel panel-quiet">
+            <div data-reveal className="panel panel-quiet !p-0 overflow-hidden">
+              <div className="media aspect-[21/9]">
+                <Image
+                  src={handoverImage.src}
+                  alt={
+                    locale === "ro"
+                      ? "Predarea cheilor clientului în fața atelierului Starter Plus"
+                      : "Передача ключей клиенту перед мастерской Starter Plus"
+                  }
+                  width={handoverImage.width}
+                  height={handoverImage.height}
+                  sizes="(max-width: 1024px) 92vw, 60vw"
+                />
+              </div>
+              <div className="p-[clamp(24px,3vw,40px)]">
               <p className="eyebrow">{home.b2bSection.eyebrow}</p>
               <h2 className="h2 mt-2.5">{home.b2bSection.title}</h2>
               <p className="mt-4 max-w-[62ch] text-ink-2">{home.b2bSection.text}</p>
@@ -245,6 +259,7 @@ export default async function HomePage({
                 {home.b2bSection.cta}
                 <Icon name="arrowRight" size={15} />
               </Link>
+              </div>
             </div>
 
             <div data-reveal className="panel">

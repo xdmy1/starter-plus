@@ -8,7 +8,7 @@ import { CtaBand } from "@/components/CtaBand";
 import { Icon } from "@/components/Icon";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 import { PageHero } from "@/components/PageHero";
-import { serviceImages } from "@/content/images";
+import { serviceImages, servicesBanner } from "@/content/images";
 import { SECTIONS, services } from "@/content/taxonomy";
 import { localePath } from "@/lib/locales";
 import { docMetadata, loadPage } from "@/lib/page";
@@ -38,6 +38,21 @@ export default async function ServicesIndexPage({ params }: Params) {
           { label: doc.short ?? doc.title },
         ]}
       />
+
+      <section className="pb-[clamp(28px,3.5vw,48px)]">
+        <div className="shell">
+          <div data-reveal className="card media aspect-[21/9]">
+            <Image
+              src={servicesBanner.src}
+              alt={doc.short ?? doc.title}
+              width={servicesBanner.width}
+              height={servicesBanner.height}
+              priority
+              sizes="100vw"
+            />
+          </div>
+        </div>
+      </section>
 
       <section className="section-tight !pt-0">
         <div className="shell">

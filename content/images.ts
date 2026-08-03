@@ -18,9 +18,23 @@ export interface ImageAsset {
 }
 
 export const heroImage: ImageAsset = {
+  src: "/img/hero-team.jpg",
+  width: 1000,
+  height: 1500,
+};
+
+/** Wide bench shot, used as the banner on the services index. */
+export const servicesBanner: ImageAsset = {
   src: "/img/hero-workshop.jpg",
   width: 1600,
   height: 1066,
+};
+
+/** Customer handover, used in the B2B block on the homepage. */
+export const handoverImage: ImageAsset = {
+  src: "/img/predare-cheie.jpg",
+  width: 1500,
+  height: 1000,
 };
 
 /** Keyed by part-category slug. */
@@ -115,8 +129,12 @@ export const credits: Credit[] = [
     source: "https://starterplus.md",
   },
   {
-    files: ["/img/hero-workshop.jpg"],
-    title: "Demaror și alternator pe bancul de lucru (fotografie furnizată de client)",
+    files: [
+      "/img/hero-team.jpg",
+      "/img/predare-cheie.jpg",
+      "/img/hero-workshop.jpg",
+    ],
+    title: "Imagini de brand și fotografii furnizate de client",
     author: "Starter Plus SRL",
     licence: "Furnizată de client / provided by the client",
     source: "https://starterplus.md",
