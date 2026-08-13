@@ -102,8 +102,15 @@ export default async function ContactPage({ params }: Params) {
                     rel="noreferrer"
                     className="btn btn-ghost btn-sm"
                   >
-                    <Icon name="whatsapp" size={15} />
+                    <Icon name="whatsapp" size={15} className="text-[#25D366]" />
                     WhatsApp
+                  </a>
+                  <a
+                    href={`viber://chat?number=${encodeURIComponent(site.viber)}`}
+                    className="btn btn-ghost btn-sm"
+                  >
+                    <Icon name="viber" size={15} className="text-[#7360F2]" />
+                    Viber
                   </a>
                   <a href={`mailto:${site.email}`} className="btn btn-ghost btn-sm">
                     <Icon name="mail" size={15} />

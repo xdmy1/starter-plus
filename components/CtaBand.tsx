@@ -1,19 +1,14 @@
-import Link from "next/link";
-
 import { Icon } from "@/components/Icon";
-import { localePath, type Locale } from "@/lib/locales";
 import { site } from "@/lib/site";
 
 interface Props {
-  locale: Locale;
   title: string;
   text: string;
   primary: string;
-  secondary: string;
 }
 
 /** Closing call to action, on a dark band so the light page has an end-stop. */
-export function CtaBand({ locale, title, text, primary, secondary }: Props) {
+export function CtaBand({ title, text, primary }: Props) {
   return (
     <section className="band-dark">
       <div className="shell py-[clamp(48px,6vw,84px)]">
@@ -27,10 +22,6 @@ export function CtaBand({ locale, title, text, primary, secondary }: Props) {
               <Icon name="phone" size={16} />
               {primary}: <span className="figure-mono">{site.primaryPhone.display}</span>
             </a>
-            <Link href={localePath(locale, "contacte")} className="btn btn-ghost">
-              {secondary}
-              <Icon name="arrowRight" size={16} />
-            </Link>
           </div>
         </div>
       </div>

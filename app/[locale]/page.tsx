@@ -318,11 +318,9 @@ export default async function HomePage({
       </section>
 
       <CtaBand
-        locale={locale}
         title={home.ctaBand.title}
         text={home.ctaBand.text}
         primary={home.ctaBand.primary}
-        secondary={home.ctaBand.secondary}
       />
 
       <FaqJsonLd items={home.faqSection.items} />

@@ -111,11 +111,9 @@ export default async function ServicePage({ params }: Params) {
       />
 
       <CtaBand
-        locale={locale}
         title={dict.home.ctaBand.title}
         text={dict.home.ctaBand.text}
         primary={dict.home.ctaBand.primary}
-        secondary={dict.home.ctaBand.secondary}
       />
 
       <BreadcrumbJsonLd

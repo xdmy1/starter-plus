@@ -235,6 +235,5 @@ export interface Home {
     title: string;
     text: string;
     primary: string;
-    secondary: string;
   };
 }
