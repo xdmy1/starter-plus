@@ -53,9 +53,9 @@ export const partImages: Record<string, ImageAsset> = {
 
 /** Keyed by service slug. */
 export const serviceImages: Record<string, ImageAsset> = {
-  "reparatii-demaroare": { src: "/img/s-reparatii-demaroare.jpg", width: 1400, height: 788 },
+  "reparatii-demaroare": { src: "/img/s-reparatii-demaroare.jpg", width: 900, height: 900, plate: true },
   "reparatii-alternatoare": { src: "/img/s-reparatii-alternatoare.jpg", width: 1400, height: 932 },
-  "electrician-auto": { src: "/img/s-electrician-auto.jpg", width: 1400, height: 1104 },
+  "electrician-auto": { src: "/img/s-electrician-auto.jpg", width: 1536, height: 1024 },
 };
 
 /**
@@ -133,6 +133,8 @@ export const credits: Credit[] = [
       "/img/hero-team.jpg",
       "/img/predare-cheie.jpg",
       "/img/hero-workshop.jpg",
+      "/img/s-reparatii-demaroare.jpg",
+      "/img/s-electrician-auto.jpg",
     ],
     title: "Imagini de brand și fotografii furnizate de client",
     author: "Starter Plus SRL",
@@ -196,13 +198,6 @@ export const credits: Credit[] = [
     source: "https://commons.wikimedia.org/wiki/File:Delcoribo.jpg",
   },
   {
-    files: ["/img/s-reparatii-demaroare.jpg"],
-    title: "Magneton anlaser za Zastavu",
-    author: "Wikimedia Commons contributor",
-    licence: "CC BY-SA 4.0",
-    source: "https://commons.wikimedia.org/wiki/File:Magneton_anlaser_za_Zastavu.jpg",
-  },
-  {
     files: ["/img/s-reparatii-alternatoare.jpg"],
     title: "Alternator",
     author: "Wikimedia Commons contributor",
@@ -224,13 +219,6 @@ export const credits: Credit[] = [
     author: "Bosch, Valeo, Denso, ACDelco, Marelli, INA, LuK",
     licence: "PD-textlogo / trademark of the owner",
     source: "https://commons.wikimedia.org/wiki/Category:Automotive_company_logos",
-  },
-  {
-    files: ["/img/s-electrician-auto.jpg"],
-    title: "Automotive alternator. Terminals",
-    author: "Wikimedia Commons contributor",
-    licence: "CC BY-SA 3.0",
-    source: "https://commons.wikimedia.org/wiki/File:Automotive_alternator._Terminals.jpg",
   },
 ];
 

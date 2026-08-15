@@ -164,7 +164,7 @@ export default async function HomePage({
                   className="card card-hover group flex flex-col"
                 >
                   {img && (
-                    <div className="media aspect-[16/10]">
+                    <div className={`media aspect-[16/10] ${img.plate ? "media-plate" : ""}`}>
                       <Image
                         src={img.src}
                         alt={doc.short ?? doc.title}

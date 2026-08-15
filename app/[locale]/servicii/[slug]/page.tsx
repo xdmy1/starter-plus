@@ -82,7 +82,12 @@ export default async function ServicePage({ params }: Params) {
       {serviceImages[slug] && (
         <section className="pb-[clamp(28px,3.5vw,48px)]">
           <div className="shell">
-            <div data-reveal className="card media aspect-[21/9]">
+            <div
+              data-reveal
+              className={`card media aspect-[21/9] ${
+                serviceImages[slug].plate ? "media-plate" : ""
+              }`}
+            >
               <Image
                 src={serviceImages[slug].src}
                 alt={doc.short ?? doc.title}

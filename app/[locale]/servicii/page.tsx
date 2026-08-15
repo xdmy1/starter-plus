@@ -73,7 +73,11 @@ export default async function ServicesIndexPage({ params }: Params) {
                   className="card card-hover flex flex-col"
                 >
                   {serviceImages[service.slug] && (
-                    <div className="media aspect-[16/10]">
+                    <div
+                      className={`media aspect-[16/10] ${
+                        serviceImages[service.slug].plate ? "media-plate" : ""
+                      }`}
+                    >
                       <Image
                         src={serviceImages[service.slug].src}
                         alt={item.short ?? item.title}
