@@ -6,7 +6,7 @@ export const contact: Doc & { formIntro?: string } = {
   excerpt: "Atelierul se află pe str. Uzinelor 104, în Chișinău — aceeași adresă apare și ca Lunca Bâcului 35 A.",
   lead: "Puteți veni cu automobilul sau doar cu demarorul ori alternatorul demontat: verificăm ambele variante la atelier. Dacă nu sunteți sigur care este defecțiunea, sunați înainte și descrieți simptomul — de multe ori se clarifică la telefon.",
   highlights: [
-    "str. Uzinelor 104, Chișinău (Lunca Bâcului 35 A)",
+    "str. Uzinelor 104, Chișinău (Lunca Bâcului 35 A) — intrare din str. Lunca Bâcului",
     "Luni – Vineri 09:00 – 18:00 · Sâmbătă 09:00 – 16:00 · Duminică zi liberă",
     "Startere și generatoare: 069 30 77 08, 079 30 77 08",
     "Electrician auto și diagnosticare: 079 10 77 08",
@@ -21,7 +21,7 @@ export const contact: Doc & { formIntro?: string } = {
     },
     {
       type: "note",
-      text: "Adresa are două denumiri: str. Uzinelor 104 și Lunca Bâcului 35 A. Navigația poate afișa oricare dintre ele — este același loc. Dacă ajungeți și nu găsiți intrarea, sunați de la fața locului la 069 30 77 08.",
+      text: "Adresa are două denumiri: str. Uzinelor 104 și Lunca Bâcului 35 A. Navigația poate afișa oricare dintre ele — este același loc. Intrarea pe teritoriu se face din str. Lunca Bâcului. Dacă ajungeți și nu găsiți intrarea, sunați de la fața locului la 069 30 77 08.",
     },
     {
       type: "p",

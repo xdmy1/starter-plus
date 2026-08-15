@@ -589,6 +589,206 @@
   }
 }
 
+/* ==========================================================================
+   Entrance route map — aerial photo with the route to the gate drawn on top.
+   Base styles are the finished state so no-JS shows the complete route;
+   html.js + .is-in run the draw-in, mirroring the reveal gating above.
+   Overlay coordinates are the photo's pixel space — see RouteMap.tsx.
+   ========================================================================== */
+
+.route-canvas {
+  position: relative;
+  aspect-ratio: 1590 / 550;
+}
+
+/* On phones the full panorama is too small to read: zoom into the route
+   (which spans x 676–1310 of 1590) and let the .card clip the overflow. */
+@media (max-width: 640px) {
+  .route-canvas {
+    width: 175%;
+    margin-left: -57%;
+  }
+}
+
+.route-casing {
+  fill: none;
+  stroke: rgb(255 255 255 / 0.92);
+  stroke-width: 13;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.route-line {
+  fill: none;
+  stroke: #e2251b;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+  filter: drop-shadow(0 0 6px rgb(226 37 27 / 0.45));
+}
+
+.route-start,
+.route-dot-lead {
+  fill: #e2251b;
+  stroke: #fff;
+  stroke-width: 2.5;
+}
+
+.route-dot-lead {
+  opacity: 0;
+}
+
+.route-pulse {
+  fill: none;
+  stroke: #e2251b;
+  stroke-width: 3;
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.route-marker {
+  filter: drop-shadow(0 4px 8px rgb(25 24 23 / 0.35));
+}
+
+.route-marker-disc {
+  fill: #fff;
+  stroke: rgb(25 24 23 / 0.18);
+}
+
+.route-tag rect {
+  fill: var(--color-accent);
+  stroke: rgb(25 24 23 / 0.25);
+}
+
+.route-tag text {
+  fill: var(--color-accent-ink);
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  text-anchor: middle;
+}
+
+.route-credit {
+  position: absolute;
+  right: 8px;
+  bottom: 6px;
+  pointer-events: none;
+  font-size: 10px;
+  color: rgb(255 255 255 / 0.75);
+  text-shadow: 0 1px 2px rgb(0 0 0 / 0.5);
+}
+
+html.js [data-reveal] .route-line {
+  stroke-dashoffset: 1;
+}
+
+html.js [data-reveal] .route-start,
+html.js [data-reveal] .route-marker,
+html.js [data-reveal] .route-tag {
+  opacity: 0;
+}
+
+html.js [data-reveal] .route-marker {
+  transform: scale(0.5);
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+}
+
+html.js [data-reveal] .route-tag {
+  transform: translateY(8px);
+}
+
+html.js [data-reveal].is-in .route-start {
+  animation: route-fade-in 0.4s ease-out 0.35s forwards;
+}
+
+html.js [data-reveal].is-in .route-line {
+  animation: route-draw 1.9s var(--ease-smooth) 0.45s forwards;
+}
+
+html.js [data-reveal].is-in .route-marker {
+  animation: route-pop 0.55s cubic-bezier(0.34, 1.56, 0.64, 1) 2.2s forwards;
+}
+
+html.js [data-reveal].is-in .route-tag {
+  animation: route-rise 0.5s var(--ease-out-expo) 2.45s forwards;
+}
+
+html.js [data-reveal].is-in .route-pulse {
+  animation: route-pulse 2.4s ease-out 2.9s infinite;
+}
+
+/* Leading dot rides the same path as ROUTE in RouteMap.tsx — keep in sync. */
+@supports (offset-path: path("M0 0 L1 1")) {
+  html.js [data-reveal].is-in .route-dot-lead {
+    offset-path: path(
+      "M 1199 317 C 1186 328 1170 341 1152 348.5 C 1105 345.5 1040 342 970 339.5 C 900 337.5 830 336 786 335.5 Q 766 336.5 757 349"
+    );
+    animation: route-lead 1.9s var(--ease-smooth) 0.45s forwards;
+  }
+}
+
+@keyframes route-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes route-fade-in {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes route-pop {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes route-rise {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes route-pulse {
+  0% {
+    opacity: 0.5;
+    transform: scale(0.5);
+  }
+  65% {
+    opacity: 0;
+    transform: scale(1.7);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.7);
+  }
+}
+
+@keyframes route-lead {
+  0% {
+    opacity: 0;
+    offset-distance: 0%;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    offset-distance: 100%;
+  }
+}
+
 .scroll-progress {
   position: fixed;
   inset: 0 auto auto 0;

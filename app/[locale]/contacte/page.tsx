@@ -7,6 +7,7 @@ import { BreadcrumbJsonLd, FaqJsonLd } from "@/components/JsonLd";
 import { MapFrame } from "@/components/MapFrame";
 import { OpenBadge } from "@/components/OpenBadge";
 import { PageHero } from "@/components/PageHero";
+import { RouteMap } from "@/components/RouteMap";
 import { phoneRoleLabels } from "@/content/groups";
 import { SECTIONS } from "@/content/taxonomy";
 import { localePath } from "@/lib/locales";
@@ -141,6 +142,9 @@ export default async function ContactPage({ params }: Params) {
               routeLabel={cta.route}
               className="!min-h-[420px]"
             />
+          </div>
+          <div data-reveal className="mt-[clamp(14px,1.6vw,18px)]">
+            <RouteMap alt={labels.entranceAlt} caption={labels.entranceCaption} />
           </div>
         </div>
       </section>

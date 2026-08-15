@@ -113,6 +113,8 @@ export interface Common {
     workingHours: string;
     findUs: string;
     entranceNote: string;
+    entranceAlt: string;
+    entranceCaption: string;
     since: string;
     guarantee: string;
     highlights: string;

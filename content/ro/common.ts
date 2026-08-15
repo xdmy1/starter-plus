@@ -51,7 +51,11 @@ export const common: Common = {
     quickContact: "Contact rapid",
     workingHours: "Program de lucru",
     findUs: "Cum ne găsiți",
-    entranceNote: "Lunca Bâcului 35 A",
+    entranceNote: "Intrarea pe teritoriu — din str. Lunca Bâcului",
+    entranceAlt:
+      "Vedere aeriană a zonei industriale: traseul de intrare spre Starter Plus, marcat cu roșu, din str. Lunca Bâcului",
+    entranceCaption:
+      "Intrarea pe teritoriu se face din str. Lunca Bâcului — urmăriți linia roșie până la poarta atelierului.",
     since: "Pe piață din",
     guarantee: "Garanție",
     highlights: "Pe scurt",

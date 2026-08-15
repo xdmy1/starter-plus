@@ -51,7 +51,11 @@ export const common: Common = {
     quickContact: "Быстрая связь",
     workingHours: "Часы работы",
     findUs: "Как нас найти",
-    entranceNote: "Лунка Быкулуй 35 A",
+    entranceNote: "Въезд на территорию — со стороны str. Lunca Bâcului",
+    entranceAlt:
+      "Аэрофотоснимок промзоны: въезд к Starter Plus обозначен красной линией со стороны str. Lunca Bâcului",
+    entranceCaption:
+      "Въезд на территорию — со стороны str. Lunca Bâcului: следуйте по красной линии до ворот мастерской.",
     since: "На рынке с",
     guarantee: "Гарантия",
     highlights: "Коротко",
